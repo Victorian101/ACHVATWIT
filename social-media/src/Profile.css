@@ -1,0 +1,100 @@
+.profileWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profileName{
+    font-size: 20px;
+    font-weight: 900;
+    color: #231335;
+    letter-spacing: 0.3px;
+}
+
+.profileInput{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(45, 18, 70, 0.18);
+    background: linear-gradient(180deg, #ffffff, #fbf8ff);
+    outline: none;
+}
+
+.profileInput:focus{
+    border-color: rgba(120, 60, 200, 0.35);
+    box-shadow: 0 0 0 4px rgba(120, 60, 200, 0.12);
+}
+
+.profileBtnRow{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.profileBtn{
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(45, 18, 70, 0.18);
+    background: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.profileBtn:hover{
+    box-shadow: 0 12px 24px rgba(60, 20, 120, 0.10);
+    transform: translateY(-1px);
+}
+
+.profileHelpWrap{
+    width: 100%;
+    position: relative;
+    margin-top: 6px;
+}
+
+.profileHelpBtn{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px dashed rgba(120, 60, 200, 0.28);
+    background: linear-gradient(180deg, #ffffff, #fbf8ff);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.profileHelpCard{
+    position: absolute;
+    top: 46px;
+    right: 0;
+    width: 280px;
+    background: white;
+    border: 1px solid rgba(45, 18, 70, 0.18);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 14px 30px rgba(40, 15, 70, 0.14);
+    z-index: 5;
+}
+
+.profileHelpTitle{
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.profileHelpText{
+    font-size: 13px;
+    opacity: 0.85;
+    line-height: 1.35;
+}
+
+.profileHelpCode{
+    margin-top: 6px;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.profileHelpCloseRow{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

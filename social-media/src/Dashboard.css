@@ -1,0 +1,219 @@
+.dashboard {
+    display: flex;
+    min-height: calc(100vh - 64px);
+    gap: 24px;
+    padding: 24px;
+    background: linear-gradient(180deg, #fbf9ff 0%, #f6f0ff 100%);
+}
+
+.left { width: 280px; }
+.center { flex: 1; max-width: 780px; }
+.right { width: 360px; }
+
+.card {
+    border: 1px solid rgba(45, 18, 70, 0.18);
+    border-radius: 16px;
+    padding: 16px;
+    background: linear-gradient(180deg, #ffffff 0%, #fcf9ff 100%);
+    box-shadow: 0 12px 28px rgba(40, 15, 70, 0.08);
+}
+
+.dashboard button {
+    border: 1px solid rgba(120, 60, 200, 0.22);
+    background: rgba(160, 130, 210, 0.10);
+    color: #2b1350;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.dashboard button:hover {
+    transform: translateY(-1px);
+    border-color: rgba(120, 60, 200, 0.35);
+    box-shadow: 0 10px 18px rgba(120, 60, 200, 0.12);
+}
+
+.dashboard button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.dashboard input {
+    width: 100%;
+    border: 1px solid rgba(120, 60, 200, 0.18);
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px 12px;
+    outline: none;
+    color: #24103a;
+}
+
+.dashboard input:focus {
+    border-color: rgba(120, 60, 200, 0.38);
+    box-shadow: 0 0 0 4px rgba(120, 60, 200, 0.10);
+}
+
+.urlBox {
+    margin-top: 8px;
+    padding: 8px 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #fafafa;
+    font-family: monospace;
+    font-size: 12px;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.postItem {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    border: 1px solid rgba(45, 18, 70, 0.14);
+    border-radius: 16px;
+    padding: 14px 14px 12px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbf7ff 100%);
+    box-shadow: 0 10px 20px rgba(40, 15, 70, 0.06);
+}
+
+
+.searchResults {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.searchEmpty {
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #ffffff, #fbf8ff);
+    border: 1px dashed rgba(120, 60, 200, 0.25);
+    color: rgba(40, 20, 60, 0.7);
+    font-size: 13px;
+}
+
+.userRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(120, 60, 200, 0.14);
+    background: linear-gradient(180deg, #ffffff, #fcf9ff);
+
+    transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.userRow:hover {
+    transform: translateY(-1px);
+    border-color: rgba(120, 60, 200, 0.28);
+    box-shadow: 0 12px 22px rgba(120, 60, 200, 0.10);
+}
+
+.userAvatar {
+    border-radius: 999px;
+    border: 1px solid rgba(120, 60, 200, 0.18);
+    background: #fff;
+}
+
+.userName {
+    flex: 1;
+    cursor: pointer;
+    font-weight: 700;
+    color: #231335;
+}
+
+.userName:hover {
+    text-decoration: underline;
+}
+
+.pill {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    user-select: none;
+}
+
+.pillOn {
+    background: rgba(110, 240, 170, 0.20);
+    border-color: rgba(30, 160, 90, 0.22);
+    color: #167c49;
+}
+
+.pillOff {
+    background: rgba(160, 130, 210, 0.10);
+    border-color: rgba(120, 60, 200, 0.18);
+    color: rgba(70, 30, 110, 0.72);
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.postUser {
+    font-weight: 900;
+    color: #231335;
+}
+
+
+.reactions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.reactBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    border: 1px solid rgba(120, 60, 200, 0.22);
+    border-radius: 999px;
+    padding: 6px 10px;
+    background: rgba(160, 130, 210, 0.10);
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.reactBtnOn {
+    background: rgba(120, 60, 200, 0.16);
+    border-color: rgba(120, 60, 200, 0.40);
+}
+
+.postContent {
+    margin-top: 6px;
+    line-height: 1.35;
+    unicode-bidi: plaintext;
+}
+
+.tabBtn {
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-weight: 800;
+    border: 1px solid rgba(120, 60, 200, 0.22);
+    background: rgba(160, 130, 210, 0.08);
+    color: #2b1350;
+}
+
+.tabBtn:hover {
+    background: rgba(160, 130, 210, 0.14);
+}
+
+.tabActive {
+    background: linear-gradient(180deg, #ede3ff, #f7f1ff);
+    border-color: rgba(120, 60, 200, 0.45);
+    box-shadow: inset 0 0 0 1px rgba(120, 60, 200, 0.12);
+}

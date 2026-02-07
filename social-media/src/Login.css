@@ -1,0 +1,103 @@
+.authPage{
+    min-height: calc(100vh - 64px);
+    display: grid;
+    place-items: center;
+    padding: 28px 16px;
+}
+
+.authCard{
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(27,16,41,0.10);
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(27,16,41,0.12);
+    padding: 18px;
+}
+
+.authTitle{
+    margin: 0 0 14px 0;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #1b1029;
+}
+
+.authSubtitle{
+    margin: 0 0 16px 0;
+    color: rgba(27,16,41,0.65);
+    font-size: 14px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.fieldLabel{
+    font-size: 13px;
+    color: rgba(27,16,41,0.72);
+}
+
+.authInput{
+    height: 44px;
+    padding: 0 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(27,16,41,0.14);
+    outline: none;
+    background: #ffffff;
+    color: #1b1029;
+}
+
+.authInput:focus{
+    border-color: rgba(124,58,237,0.55);
+    box-shadow: 0 0 0 4px rgba(167,139,250,0.25);
+}
+
+.actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.btnPrimary{
+    flex: 1;
+    height: 44px;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #7c3aed, #a78bfa);
+    box-shadow: 0 12px 26px rgba(124,58,237,0.22);
+}
+
+.btnPrimary:disabled{
+    opacity: 0.55;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.btnGhost{
+    height: 44px;
+    padding: 0 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    background: rgba(124,58,237,0.08);
+    border: 1px solid rgba(124,58,237,0.18);
+    color: #2b1350;
+}
+
+.errorBox{
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(225,29,72,0.25);
+    background: rgba(225,29,72,0.06);
+    color: #a10f2e;
+    font-weight: 600;
+    font-size: 13px;
+}

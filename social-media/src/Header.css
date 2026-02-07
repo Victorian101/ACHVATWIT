@@ -1,0 +1,34 @@
+.siteHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: linear-gradient(90deg, #1B1029, #2B1350, #3B1672);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+.siteTitle {
+    color: #F3ECFF;
+    font-family: "Rubik", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    user-select: none;
+
+    background: linear-gradient(90deg, #E9D7FF, #FFFFFF, #D7B8FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.siteHeaderInner {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 16px;
+}
+
